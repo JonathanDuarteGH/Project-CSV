@@ -36,3 +36,28 @@
 4. Type: ```git rm --cached file1.txt``` to remove file for only Git repository **and not** the filesystem
 
 https://datalumina.clickup.com/docs/9015213037/d/h/8cnjezd-17675/ddd52c673443975
+
+## How to automate uninstall on git bash
+1. Launch Notepad
+2. Type: ```pip uninstall <package-name>```
+3. Repeat <b>Step 2</b> for multiple packages:
+```plaintext
+pip uninstall <package-name2>
+pip uninstall <package-name3>
+...
+pip uninstall <package-name(n)>
+```
+4. File -> Save as
+5. Under Save as type dropdown -> Select <b>All types (* . *)</b> -> Save to desired folder
+6. Type ```file-name.bat``` and **Save**
+7. Launch Gitbash terminal
+8. Navigate to where .bat file was saved:
+```bash
+path/to/your/file-name.bat
+```
+10. Acitvate cmd under Gitbash by typing ```cmd```
+11. Type the following to activate the automation:
+```bash
+file-name.bat
+```
+12. After finishing type: ```exit``` to exit cmd
