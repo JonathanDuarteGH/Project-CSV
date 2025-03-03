@@ -13,13 +13,14 @@
 8. Select desired Python Interpreter by typing ```>``` in search bar 
 9. Type ```python -m venv .venv``` in git bash terminal
 10. New environment will be created. Click **Yes** from prompt
-11. Activate Virtual Environment:  ```source .\venv\Scripts\activate```
+11. Activate Virtual Environment:  ```source .venv/Scripts/activate```
 12. Type ```pip install [your desired packages]``` to install any packages
 13. Type ```pip install -r requirements.txt``` to create "requirements.txt" file
 14. Type ```pip freeze > requirements.txt``` to save current list of installed packages
 15. Type ```pip install pipreqs``` to install only packages being used in current project
 16. Type ```pip install pipreqs --force```, if necessary
-17. Type ```pip freeze > requirements.txt``` to save current list of installed packages
+17. Type ```pipreqs .``` to record the packages and libraries used in the python.py project
+18. Type ```pip freeze > requirements.txt``` to save current list of installed packages
 
 ## How to use a repo from a github project for Python
 1. Create an empty repo on github
