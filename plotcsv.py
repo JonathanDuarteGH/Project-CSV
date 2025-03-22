@@ -83,7 +83,7 @@ plt.savefig("CSV Visualization_ElapsedTime2.pdf")
 
 assert dt_csv[0] == dt_csv[1], "Both datetime stamps must be the same"
 
-add_secs = lambda np_sec: [dt_csv[0] + timedelta(seconds=d_sec) for d_sec in np_sec]
+add_secs = lambda np_sec: [dt_csv[0] + timedelta(seconds=d_sec) for d_sec in np_sec]  # noqa: E731
 
 df_sig["dt"] = add_secs(df_sig["elap_time"].to_numpy(dtype=float))
 
