@@ -16,7 +16,7 @@
 11. Activate Virtual Environment:  ```source .venv/Scripts/activate```
 12. Type ```pip install [your desired packages]``` to install any packages
 13. Type ```pip freeze > requirements.txt``` to save current list of installed packages
-14. For larger projects, type ```pip install pipreqs```. This tool installs only packages being used in current project of your main python file
+14. For larger projects, type ```pip install pipreqs```. This tool only installs packages being used in the current project of your main python file. See "<b>Why no pip freeze?</b>" for more information
 16. Type ```pip install pipreqs --force```, if necessary
 17. For help, type in ```pipreqs --help```
 18. Type ```pipreqs .``` to record the packages and libraries used in your python project
@@ -61,3 +61,8 @@ path/to/your/file-name.bat
 file-name.bat
 ```
 12. After finishing type: ```exit``` to exit cmd
+
+## Why no pip freeze?
+1. ``pip freeze`` only saves the packages that are installed with ``pip install`` in your environment.
+2. ``pip freeze`` saves all packages in the environment including those that you don't use in your current project (if you don't have ``virtualenv``).
+3. and sometimes you just need to create ``requirements.txt`` for a new project without installing modules.
