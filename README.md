@@ -12,14 +12,16 @@
 7. Open ```.py``` file in VS Code
 8. Select desired Python Interpreter by typing ```>``` in search bar 
 9. Type ```python -m venv .venv``` in git bash terminal
-10. New environment will be created. Click **Yes** from prompt
-11. Activate Virtual Environment:  ```source .venv/Scripts/activate```
+10. New environment will be created. Click **Yes** from prompt and virtual environment will be activated.
+11. To activate Virtual Environment:  ```source .venv/Scripts/activate```
 12. Type ```pip install [your desired packages]``` to install any packages
 13. Type ```pip freeze > requirements.txt``` to save current list of installed packages
 14. For larger projects, type ```pip install pipreqs```. This tool only installs packages being used in the current project of your main python file. See "<b>Why no pip freeze?</b>" for more information
 16. Type ```pip install pipreqs --force```, if necessary
 17. For help, type in ```pipreqs --help```
-18. Type ```pipreqs .``` to record the packages and libraries used in your python project
+18. Type ```pipreqs .``` to record the packages and libraries used in your python project. **You must** be in a subfolder to execute this command. Otherwise you will get thrown a weird character error such as in the following post: 
+
+**[Pipreqs requirements.txt is not correct]:** https://stackoverflow.com/questions/64630130/pipreqs-requirements-txt-is-not-correct 
 
 ## How to use a repo from a github project for Python
 1. Create an empty repo on github
@@ -28,6 +30,7 @@
 4. Clone the repo: ```git clone https://github.com/[username]/[repo_name]```
 5. Activate Virtual Environment:  ```source .\venv\Scripts\activate```
 6. Install the requirements: ```pip install -r requirements.txt```
+7. Upgrade the installed requirements: ```pip install --upgrade -r requirements.txt```
 
 ## How to uninstall all packages in Virtual Environment for Python
 1. Type: ```pip freeze > requirements.txt```

@@ -169,3 +169,18 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# subfolders
+
+data/
+models/
+notebooks/
+references/
+reports/
+requirements_folder/
+src/
+
+# specific files
+
+requirements --python313.txt
+requirements --Using Pipreqs.txt
