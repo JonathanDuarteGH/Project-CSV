@@ -69,3 +69,15 @@ file-name.bat
 1. ``pip freeze`` only saves the packages that are installed with ``pip install`` in your environment.
 2. ``pip freeze`` saves all packages in the environment including those that you don't use in your current project (if you don't have ``virtualenv``).
 3. and sometimes you just need to create ``requirements.txt`` for a new project without installing modules.
+
+## How to modify changes to existing github repo after cloning
+1. Clone the repo ```git@github.com:username/repo.git```
+2. Make any changes to any one of the repo files of your choosing
+3. Follow the commands below:
+```plaintext
+git init
+git add .
+git commit -m "my commit"
+git remote set-url origin git@github.com:username/repo.git
+git push origin main
+```
