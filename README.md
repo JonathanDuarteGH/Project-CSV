@@ -14,7 +14,7 @@
 9. Type ```python -m venv .venv``` in git bash terminal
 10. New environment will be created. Click **Yes** from prompt and virtual environment will be activated.
 11. To activate Virtual Environment:  ```source .venv/Scripts/activate```
-12. Type ```pip install [your desired packages]``` to install any packages
+12. Type ```pip install -r /path/to/requirements.txt``` to install all packages from ```requirements.txt```
 13. Type ```pip freeze > requirements.txt``` to save current list of installed packages
 14. For larger projects, type ```pip install pipreqs```. This tool only installs packages being used in the current project of your main python file. See "<b>Why no pip freeze?</b>" for more information
 16. Type ```pip install pipreqs --force```, if necessary
